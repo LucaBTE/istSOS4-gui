@@ -9,6 +9,8 @@ import { siteConfig } from "@/config/site";
 import { fontSans } from "@/config/fonts";
 import { Navbar } from "@/components/navbar";
 
+export const mainColor = siteConfig.main_color;
+
 export const metadata: Metadata = {
   title: {
     default: siteConfig.name,
@@ -47,13 +49,24 @@ export default function RootLayout({
             <main className="container mx-auto max-w-7xl pt-16 px-6 flex-grow">
               {children}
             </main>
-            <footer className="w-full flex items-center justify-center py-3 bg-green-500">
+            
+
+            <footer 
+            className="w-full flex items-center justify-center py-3 "
+            style={{ backgroundColor: mainColor }}
+            >
+              
           
-              <span className="text-default-600">Open Source Software by Institute of Earth Science - SUPSI</span>
+              <span 
+              style= {{ color: "white" }}
+              >
+                Open Source Software by Institute of Earth Science - SUPSI</span>
             </footer>
           </div>
         </Providers>
       </body>
     </html>
   );
+  
+
 }

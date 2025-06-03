@@ -1,7 +1,7 @@
 import * as React from "react";
 
 import { IconSvgProps } from "@/types";
-import istSOSLogo from '../public/istsos-logo-clear.png';
+import istSOSLogo from '../public/istsos_bars_white.png';
 
 
 export const Logo: React.FC<IconSvgProps> = ({

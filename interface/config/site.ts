@@ -2,6 +2,7 @@ export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
   name: "istSOS4 admin ui",
+  main_color: "#398174",
   navItems: [
     {
       label: "Home",

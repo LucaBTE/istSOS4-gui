@@ -7,12 +7,13 @@ import { siteConfig } from "@/config/site";
 import { title, subtitle } from "@/components/primitives";
 import { GithubIcon } from "@/components/icons";
 
+export const mainColor = siteConfig.main_color;
+
 export default function Home() {
   return (
     <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
       <div className="inline-block max-w-xl text-center justify-center">
-        <span className={title({ color: "green" })}>istSOS&nbsp;</span>
-        <span className={title()}>admin ui&nbsp;</span>
+        <span className={title()}>istSOS admin ui&nbsp;</span>
         <br />
         <div className={subtitle({ class: "mt-4" })}>
           
